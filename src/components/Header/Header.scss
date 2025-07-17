@@ -1,0 +1,126 @@
+header {
+    width: 100%;
+    max-width: 736px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 58px;
+    .fontAndThemeChanger {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 26px;
+        .line {
+            width: 1px;
+            height: 32px;
+            background-color: #E9E9E9;
+        }
+        .fontChanger {
+            position: relative;
+            width: 183px;
+            display: flex;
+            justify-content: flex-end;
+            .fontName {
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0;
+                font-weight: 700;
+                gap: 16px;
+                display: flex;
+                align-items: center;
+            }
+            .darkFonts {
+                background-color: #1F1F1F !important;
+                box-shadow: 0px 5px 30px 0px #A445ED !important;
+                li {
+                    button {
+                        color: white;
+                    }
+                }
+            }
+            .fonts {
+                list-style: none;
+                position: absolute;
+                height: 152px;
+                z-index: 99999999999;
+                background-color: white;
+                top: 42px;
+                border-radius: 16px;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+                width: 183px;
+                box-shadow: 0px 5px 30px 0px #0000001A;
+                li {
+                  button {
+                    width: 100%;
+                    text-align: start;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: 0;
+                    font-weight: 700;
+                    font-family: Inter;
+                  }
+                  button:hover {
+                    color: #A445ED !important;
+                  }
+              
+                  &:nth-child(2) button {
+                    font-family: Lora;
+                  }
+              
+                  &:nth-child(3) button {
+                    font-family: Inconsolata;
+                  }
+                }
+              }
+        }
+        .themeChanger {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: 20px;
+            .switch {
+                width: 40px;
+                height: 20px;
+                border-radius: 10px;
+                display: flex;
+                padding: 3px;
+                align-items: center;
+                background-color: #757575;
+                .circle {
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 100%;
+                    background-color: white;
+                }
+            }
+            .darkSwitch {
+                justify-content: flex-end;
+                background-color: #A445ED;
+            }
+            .darkSvg {
+                path {
+                    stroke: #A445ED;
+                }
+            }
+            .switch:hover {
+                background-color: #A445ED;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        .fontAndThemeChanger {
+            .fontChanger {
+                width: max-content;
+                .fontName {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

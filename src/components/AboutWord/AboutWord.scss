@@ -1,0 +1,158 @@
+.aboutWord {
+    width: 100%;
+    max-width: 736px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+    margin-top: 52px;
+    .about {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .word {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            .name {
+                font-weight: 700;
+                font-size: 64px;
+                letter-spacing: 0;
+                line-height: 100%;
+            }
+            .phonetic {
+                color: #A445ED !important;
+                font-size: 24px;
+                letter-spacing: 0;
+                line-height: 100%;
+            }
+        }
+    }
+    .meanings {
+        display: flex;
+        flex-direction: column;
+        row-gap: 42px;
+        .meaning {
+            display: flex;
+            flex-direction: column;
+            row-gap: 42px;
+            .partOfSpeech {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                font-size: 24px;
+                letter-spacing: 0;
+                line-height: 100%;
+                font-weight: 700;
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: #E9E9E9;
+                }
+            }
+            .definitions {
+                display: flex;
+                flex-direction: column;
+                row-gap: 27px;
+                .title {
+                    font-size: 20px;
+                    letter-spacing: 0;
+                    line-height: 100%;
+                    font-weight: 400;
+                    color: #838383 !important;
+                }
+                ul {
+                    align-self: flex-end;
+                    width: 100%;
+                    max-width: 700px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 18px;
+                    li {
+                        font-size: 18px;
+                        line-height: 24px;
+                        letter-spacing: 0;
+                        font-weight: 400;
+                        span {
+                            color: #757575 !important;
+                        }
+                    }
+                    li::marker {
+                        color: #A445ED !important;
+                        width: 5px;
+                        height: 5px;
+                    }
+                    .example {
+                        list-style: none;
+                    }
+                }
+            }
+            .synonyms {
+                display: flex;
+                gap: 22px;
+                p {
+                    font-size: 20px;
+                    letter-spacing: 0;
+                    line-height: 100%;
+                    font-weight: 400;
+                    color: #757575 !important;
+                }
+                .synonymList {
+                    span {
+                        color: #A445ED !important;
+                        font-size: 20px;
+                        letter-spacing: 0;
+                        line-height: 100%;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .source {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-top: 1px solid #E9E9E9;
+        padding-top: 19px;
+        margin-bottom: 124px;
+        span {
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 100%;
+            font-weight: 400;
+            color: #757575 !important;
+            text-decoration: underline;
+        }
+        a {
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 100%;
+            font-weight: 400;
+            color: #757575 !important;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #A445ED !important;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .aboutWord {
+        .about {
+            .word {
+                .name {
+                    font-size: 32px;
+                }
+                .phonetic {
+                    font-size: 18px;
+                }
+            }
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+}
